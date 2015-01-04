@@ -1,1 +1,394 @@
 /* Qianglong Mo 2014 (Sumi Interactive) */
+
+/*---------------------------------------------------------------
+ *    function
+ *---------------------------------------------------------------*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.enableSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*---------------------------------------------------------------
+ *    global
+ *---------------------------------------------------------------*/
+body {
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', 'Open Sans', Arial, 'Hiragino Sans GB', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+  color: #72777f;
+
+  p {
+    line-height: 30px;
+  }
+}
+
+.container {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/*---------------------------------------------------------------
+ *    main
+ *---------------------------------------------------------------*/
+
+/* header */
+header {
+  min-height: 150px;
+  background: url("../images/headerBg.png") repeat-x;
+}
+
+.header-logo{
+  float: left;
+  width: 215px;
+  height: 130px;
+  margin-top: 8px;
+  background: url("../images/header-logo.png") no-repeat;
+}
+
+.header-nav {
+  float: right;
+  text-align: right;
+}
+
+.header-nav a {
+  line-height: 150px;
+  margin-right: 50px;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* ad */
+.ad {
+  min-height: 718px;
+  background: url("../images/main-ad.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .container {
+    position: relative;
+  }
+
+  .trangle01 {
+    position: absolute;
+    top: 462px;
+    right: 50px;
+    width: 43px;
+    height: 84px;
+    background: url("../images/section-01-trangle-01.png") no-repeat;
+  }
+
+  .trangle02 {
+    position: absolute;
+    top: 577px;
+    right: 124px;
+    width: 43px;
+    height: 78px;
+    background: url("../images/section-01-trangle-02.png") no-repeat;
+  }
+
+  .trangle03 {
+    position: absolute;
+    top: 677px;
+    right: 54px;
+    width: 67px;
+    height: 74px;
+    background: url("../images/section-01-trangle-03.png") no-repeat;
+  }
+}
+
+.ad02 {
+  min-height: 330px;
+  background: url("../images/ad02.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .container {
+    position: relative;
+  }
+
+  .trangle01 {
+    position: absolute;
+    top: 146px;
+    left: 250px;
+    width: 147px;
+    height: 77px;
+    background: url("../images/section-02-trangle-01.png") no-repeat;
+  }
+
+  .trangle02 {
+    position: absolute;
+    top: 136px;
+    left: 546px;
+    width: 46px;
+    height: 77px;
+    background: url("../images/section-02-trangle-02.png") no-repeat;
+  }
+
+  .trangle03 {
+    position: absolute;
+    top: 240px;
+    left: 600px;
+    width: 64px;
+    height: 131px;
+    background: url("../images/section-02-trangle-03.png") no-repeat;
+  }
+
+  .trangle04 {
+    position: absolute;
+    top: 140px;
+    left: 660px;
+    width: 137px;
+    height: 73px;
+    background: url("../images/section-02-trangle-04.png") no-repeat;
+  }
+}
+
+/* section */
+.section-title {
+  margin: -43px 0 0 0;
+
+  img {
+    vertical-align: top;
+    box-shadow: 5px 2px 7px rgba(9, 2, 4, .15);
+    -webkit-box-shadow: 5px 2px 7px rgba(9, 2, 4, .15);
+    -moz-box-shadow: 5px 2px 7px rgba(9, 2, 4, .15);
+    -ms-box-shadow: 5px 2px 7px rgba(9, 2, 4, .15);
+    -o-box-shadow: 5px 2px 7px rgba(9, 2, 4, .15);
+  }
+}
+
+.section-split {
+  height: 62px;
+  background: url("../images/section-split.png") repeat-x;
+}
+
+.section-01 {
+  padding:  0 0 73px 0;
+
+  h1 {
+    line-height: 60px;
+    margin-top: 56px;
+    font-size: 58px;
+    color: #333;
+
+    small {
+      margin-top: 7px;
+      font-size: 36px;
+      font-weight: normal;
+      color: #253750;
+    }
+  }
+
+  .chart-content {
+    padding: 47px 0 0 0;
+    border-top: 1px solid #dedede;
+
+    .para {
+      width: 512px;
+    }
+  }
+
+  .chart {
+    margin-top: 21px;
+    margin-bottom: 28px;
+    position: relative;
+
+    .icon {
+      position: absolute;
+      width: 60px;
+      height: 24px;
+      line-height: 24px;
+      font-size: 14px;
+      font-style: normal;
+      color: #fff;
+      text-align: center;
+      border-radius: 24px;
+      box-shadow: 1px 2px 3px rgba(9, 2, 4, .15);
+      -webkit-box-shadow: 1px 2px 3px rgba(9, 2, 4, .15);
+      -moz-box-shadow: 1px 2px 3px rgba(9, 2, 4, .15);
+      -ms-box-shadow: 1px 2px 3px rgba(9, 2, 4, .15);
+      -o-box-shadow: 1px 2px 3px rgba(9, 2, 4, .15);
+    }
+
+    .icon01 {
+      top: 45px;
+      left: 153px;
+      background: #91c981;
+    }
+
+    .icon02 {
+      top: 86px;
+      left: 277px;
+      background: #3092be;
+    }
+  }
+}
+
+.section-02 {
+  padding: 0 0 130px 0;
+
+  .orderList {
+    padding: 0 0 63px 0;
+    margin: 68px 0 0 0;
+    border-bottom: 1px solid #dedede;
+  }
+
+  .article-list {
+    margin-top: 38px;
+  }
+
+  .article-list-content {
+    width: 512px;
+
+    h3 {
+      margin-bottom: 20px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    p {
+      color: #999;
+    }
+  }
+}
+
+.section-03 {
+  .para {
+    margin-top: 35px;
+  }
+
+  .people-list {
+    margin-top: 60px;
+  }
+
+  .people-list-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 0 0 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    dt {
+      margin: 30px 0 26px 0;
+      color: #666;
+      font-size: 18px;
+      font-weight: normal;
+
+      span {
+        margin-left: 18px;
+        color: #7d8188;
+      }
+    }
+
+    dd {
+      width: 255px;
+      line-height: 24px;
+      margin-left: 0;
+      color: #7d8188;
+    }
+  }
+}
+
+/* footer */
+footer {
+  min-height: 355px;
+  padding-top: 79px;
+  margin-top: 78px;
+  background: #fff url("../images/footer.png") repeat-x;
+}
+
+.footer-logo {
+}
+
+.footer-logo-container {
+  display: inline-block;
+  width: 186px;
+  height: 110px;
+  background: url("../images/footer-logo.png") no-repeat;
+  position: relative;
+
+  .trangle01 {
+    position: absolute;
+    top: 10px;
+    left: 137px;
+    width: 43px;
+    height: 84px;
+    background: url("../images/footer-logo-trangle01.png") no-repeat;
+  }
+
+  .trangle02 {
+    position: absolute;
+    top: 4px;
+    left: 145px;
+    width: 11px;
+    height: 11px;
+    background: url("../images/footer-logo-trangle02.png") no-repeat;
+  }
+
+  .trangle03 {
+    position: absolute;
+    top: 20px;
+    left: 145px;
+    width: 8px;
+    height: 12px;
+    background: url("../images/footer-logo-trangle03.png") no-repeat;
+  }
+
+  .trangle04 {
+    position: absolute;
+    top: 29px;
+    left: 150px;
+    width: 9px;
+    height: 8px;
+    background: url("../images/footer-logo-trangle04.png") no-repeat;
+  }
+
+  .trangle05 {
+    position: absolute;
+    top: 20px;
+    left: 163px;
+    width: 10px;
+    height: 7px;
+    background: url("../images/footer-logo-trangle05.png") no-repeat;
+  }
+}
+
+.footer-copyright {
+  margin-top: 45px;
+  color: #000;
+}
