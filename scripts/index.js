@@ -5,12 +5,24 @@ $(function (){
 
     // jump to target
     $('.target1').click(function (){
-        $('html,body').animate({scrollTop:$('.section-01').offset().top - 18}, 800);
+        jumpToTarget('.section-01', '.section-title-01');
     });
     $('.target2').click(function (){
-        $('html,body').animate({scrollTop:$('.section-02').offset().top - 18}, 800);
+        jumpToTarget('.section-02', '.section-title-02');
     });
     $('.target3').click(function (){
-        $('html,body').animate({scrollTop:$('.section-03').offset().top - 18}, 800);
+        jumpToTarget('.section-03', '.section-title-03');
     });
+
+    function jumpToTarget(section, sectionTitle){
+        $('html,body').animate({scrollTop:$(section).offset().top - 18}, 800);
+
+        setTimeout(function (){
+            $(sectionTitle).addClass('animated bounceInLeft');
+            setTimeout(function (){
+                $(sectionTitle).removeClass('animated bounceInLeft');
+            }, 1000);
+        }, 400);
+    }
+
 });
