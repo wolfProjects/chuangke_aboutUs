@@ -38,6 +38,69 @@
   text-align: center;
 }
 
+.transition(@key:all, @duration: .2s){
+  -webkit-transition: @key @duration;
+  -moz-transition: @key @duration;
+  -ms-transition: @key @duration;
+  -o-transition: @key @duration;
+  transition: @key @duration;
+}
+
+.transform(@key){
+  transform: @key;
+  -webkit-transform: @key;
+  -moz-transform: @key;
+  -ms-transform: @key;
+  -o-transform: @key;
+}
+
+.animation(@name, @duration, @infinite){
+  animation: @name @duration @infinite;
+  -webkit-animation: @name @duration @infinite;
+  -moz-animation: @name @duration @infinite;
+  -o-animation: @name @duration @infinite;
+}
+
+/*---------------------------------------------------------------
+ *    animation
+ *---------------------------------------------------------------*/
+@keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+@-webkit-keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+@-o-keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+@-moz-keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+
 /*---------------------------------------------------------------
  *    global
  *---------------------------------------------------------------*/
@@ -89,6 +152,11 @@ header {
   font-size: 18px;
   color: #000;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.header-nav a:hover {
+  color: #999;
 }
 
 /* ad */
@@ -303,6 +371,14 @@ header {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 
+    img {
+      .transition(all, .4s);
+    }
+
+    img:hover {
+      opacity: .8;
+    }
+
     dt {
       margin: 30px 0 26px 0;
       color: #666;
@@ -346,9 +422,11 @@ footer {
     position: absolute;
     top: 10px;
     left: 137px;
-    width: 43px;
-    height: 84px;
+    width: 6px;
+    height: 12px;
     background: url("../images/footer-logo-trangle01.png") no-repeat;
+
+    .animation(logoRotate, 2s, infinite);
   }
 
   .trangle02 {
@@ -358,6 +436,8 @@ footer {
     width: 11px;
     height: 11px;
     background: url("../images/footer-logo-trangle02.png") no-repeat;
+
+    .animation(logoRotate, 2.5s, infinite);
   }
 
   .trangle03 {
@@ -365,8 +445,10 @@ footer {
     top: 20px;
     left: 145px;
     width: 8px;
-    height: 12px;
+    height: 10px;
     background: url("../images/footer-logo-trangle03.png") no-repeat;
+
+    .animation(logoRotate, 3s, infinite);
   }
 
   .trangle04 {
@@ -376,6 +458,8 @@ footer {
     width: 9px;
     height: 8px;
     background: url("../images/footer-logo-trangle04.png") no-repeat;
+
+    .animation(logoRotate, 3.5s, infinite);
   }
 
   .trangle05 {
@@ -385,6 +469,8 @@ footer {
     width: 10px;
     height: 7px;
     background: url("../images/footer-logo-trangle05.png") no-repeat;
+
+    .animation(logoRotate, 5s, infinite);
   }
 }
 
