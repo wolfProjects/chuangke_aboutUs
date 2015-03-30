@@ -410,6 +410,8 @@ footer {
 }
 
 .footer-logo {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .footer-logo-container {
@@ -475,7 +477,32 @@ footer {
   }
 }
 
+.footer-intel {
+  display: inline-block;
+  width: 80px;
+  margin: -6px 0 0 70px;
+  vertical-align: middle;
+  color: #999;
+  font-size: 12px;
+
+  a {
+    display: block;
+
+    img {
+      display: block;
+    }
+  }
+
+  span {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    background: url("../images/footer-intel-split.png") no-repeat left bottom;
+  }
+}
+
 .footer-copyright {
   margin-top: 45px;
   color: #000;
+  opacity: .25;
 }
